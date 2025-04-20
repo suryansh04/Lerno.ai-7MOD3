@@ -36,7 +36,7 @@ use_gemini = False
 if google_api_key:
     try:
         from langchain_google_genai import ChatGoogleGenerativeAI
-        gemini_model = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=google_api_key)
+        gemini_model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=google_api_key)
         use_gemini = True
     except (ImportError, Exception) as e:
         print(f"Failed to initialize Gemini: {e}")
