@@ -21,10 +21,6 @@ git clone https://github.com/suryansh04/Lerno.ai-HackoWasp-7.0--Ctrl-Alt-Defeat
 cd Lerno.ai-HackoWasp-7.0--Ctrl-Alt-Defeat
 ```
 
-```
-
-```
-
 ### 2. Frontend Setup
 
 Install the required dependencies:
