@@ -14,7 +14,7 @@ import uuid
 load_dotenv()
 cred = credentials.Certificate("lerno-cd286-firebase-adminsdk-fbsvc-222d396b1f.json")
 firebase_admin.initialize_app(cred, {"storageBucket": "lerno-cd286.firebasestorage.app"})
-
+# For Storing Videos and manim Generation
 bucket = storage.bucket()
 
 anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
