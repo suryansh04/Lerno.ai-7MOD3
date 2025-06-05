@@ -18,8 +18,6 @@ export default function PlaceholdersAndVanishInputDemo() {
     "Give a visual explanation of linear transformations in 3D",
   ];
   const loadingStates = [
-    { text: "Analyzing your answers..." },
-    { text: "Identifying knowledge gaps..." },
     { text: "Finding personalized learning topics..." },
     { text: "Generating educational content..." },
     { text: "Preparing your learning experience..." },
@@ -91,7 +89,7 @@ export default function PlaceholdersAndVanishInputDemo() {
         <MultiStepLoader
           loadingStates={loadingStates}
           loading={isLoading}
-          duration={2000}
+          duration={5000}
           loop={true}
         />
       )}

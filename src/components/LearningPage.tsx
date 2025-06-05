@@ -108,7 +108,6 @@ const LearningPage = () => {
       setCurrentSlideIndex(0);
     }
 
-    // Update video index when next is clicked, if we have videos loaded
     if (videoURLs.length > 0) {
       if (currentVideoIndex < videoURLs.length - 1) {
         setCurrentVideoIndex((prevIndex) => prevIndex + 1);
