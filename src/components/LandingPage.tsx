@@ -90,5 +90,6 @@ const LandingPage = () => {
     </div>
   );
 };
+//Making the component
 
 export default LandingPage;

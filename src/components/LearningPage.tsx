@@ -153,6 +153,7 @@ const LearningPage = () => {
   useEffect(() => {
     let cancelled = false;
     let audio: HTMLAudioElement | null = null;
+    //Making the component
 
     async function fetchAndPlayMurfAudio() {
       setIsMurfLoading(true);

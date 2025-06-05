@@ -49,6 +49,7 @@ export default function PlaceholdersAndVanishInputDemo() {
       setIsLoading(false);
     }
   };
+  //Making the component
 
   return (
     <div className="h-screen relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">

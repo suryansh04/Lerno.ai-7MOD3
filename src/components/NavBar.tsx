@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const AceternityNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  //Making the component
 
   return (
     <div className="w-full bg-red-200">

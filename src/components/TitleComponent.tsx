@@ -14,5 +14,6 @@ const TitleComponent = ({ title }) => {
     </div>
   );
 };
+//Making the component
 
 export default TitleComponent;

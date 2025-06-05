@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+//Making the component
 
 const AIChatbot = ({ lessonTitle, lessonContent, currentQuestion }) => {
   const [messages, setMessages] = useState([

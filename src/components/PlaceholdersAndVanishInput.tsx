@@ -167,6 +167,7 @@ export function PlaceholdersAndVanishInput({
   const vanishAndSubmit = () => {
     setAnimating(true);
     draw();
+    //Making the component
 
     const value = inputRef.current?.value || "";
     if (value && inputRef.current) {

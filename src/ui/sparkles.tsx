@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
+//Making the component
 
 export function SparklesCore({
   id,
