@@ -2,6 +2,7 @@ import { ComponentPropsWithoutRef, CSSProperties, FC } from "react";
 
 import { cn } from "@/lib/utils";
 
+/// Taken from shiny text
 export interface AnimatedShinyTextProps
   extends ComponentPropsWithoutRef<"span"> {
   shimmerWidth?: number;

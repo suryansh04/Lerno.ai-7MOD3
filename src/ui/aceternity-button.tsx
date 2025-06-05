@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+/// Button Styling 
 export const AceternityButton = ({ children, onClick }) => {
   return (
     <motion.button

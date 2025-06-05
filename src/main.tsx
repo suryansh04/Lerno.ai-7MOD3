@@ -1,18 +1,17 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
-  Routes,
 } from "react-router-dom";
 import PlaceholdersAndVanishInputDemo from "./components/PlaceholdersAndVanishInputDemo.tsx";
 import "./App.css";
 import LearningPage from "./components/LearningPage.tsx";
 import LandingPage from "./components/LandingPage.tsx";
 
+//paths
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
