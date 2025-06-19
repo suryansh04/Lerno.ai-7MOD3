@@ -12,8 +12,9 @@ import firebase_admin
 from firebase_admin import credentials, storage
 import uuid
 load_dotenv()
-cred = credentials.Certificate("lerno-cd286-firebase-adminsdk-fbsvc-222d396b1f.json")
-firebase_admin.initialize_app(cred, {"storageBucket": "lerno-cd286.firebasestorage.app"})
+cred = credentials.Certificate("lerno-998e4-firebase-adminsdk-fbsvc-e467c59e40.json")
+# firebase_admin.initialize_app(cred, {"storageBucket": "lerno-cd286.firebasestorage.app"})
+firebase_admin.initialize_app(cred, {"storageBucket": "lerno-998e4.firebasestorage.app"})
 # For Storing Videos and manim Generation
 bucket = storage.bucket()
 

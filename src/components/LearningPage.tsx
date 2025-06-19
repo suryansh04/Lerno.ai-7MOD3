@@ -9,14 +9,24 @@ import { getStorage, ref, getDownloadURL, listAll } from "firebase/storage";
 import { initializeApp } from "firebase/app";
 import axios from "axios";
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBhIvBxbGblvV_2Wr4UQ3PyaehwvWi6H3w",
+//   authDomain: "lerno-cd286.firebaseapp.com",
+//   projectId: "lerno-cd286",
+//   storageBucket: "lerno-cd286.firebasestorage.app",
+//   messagingSenderId: "995948277315",
+//   appId: "1:995948277315:web:340963bb717be5da436ef6",
+// };
 const firebaseConfig = {
-  apiKey: "AIzaSyBhIvBxbGblvV_2Wr4UQ3PyaehwvWi6H3w",
-  authDomain: "lerno-cd286.firebaseapp.com",
-  projectId: "lerno-cd286",
-  storageBucket: "lerno-cd286.firebasestorage.app",
-  messagingSenderId: "995948277315",
-  appId: "1:995948277315:web:340963bb717be5da436ef6",
+  apiKey: "AIzaSyDSIJeSnWpQZZm7BXooab86Laebsl95qDI",
+  authDomain: "lerno-998e4.firebaseapp.com",
+  projectId: "lerno-998e4",
+  storageBucket: "lerno-998e4.firebasestorage.app",
+  messagingSenderId: "922338014144",
+  appId: "1:922338014144:web:7ed3af0d781f5136e60e25",
+  measurementId: "G-QJXSJZZJFW",
 };
+
 const app = initializeApp(firebaseConfig);
 
 const MURF_API_KEY = "ap2_4fda0ed0-fbb8-42d8-8342-0ad8b064361c";
