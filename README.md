@@ -4,7 +4,7 @@
 
 An AI-powered learning platform that visualizes concepts to enhance student understanding and retention. Lerno.ai is an intelligent learning platform that combines frontend web technologies with backend services in Node.js and FastAPI to deliver a comprehensive educational experience.
 
-Check out the PPT for details! - https://www.figma.com/slides/2P1pYfOLMtQcbQfyhlG9fi/lerno.ai-CTRL-ALT-DEFEAT?node-id=0-239&t=EhwKERTP5aHifi0N-1
+Check out the PPT for details! - https://www.figma.com/slides/7va4AdKHHQqQ8mGIlovYmW/7MOD3-codeclash2.0-LERNO.AI?node-id=4003-764&t=N2oahMX93MnQEJwY-1
 
 ## Project Setup
 
