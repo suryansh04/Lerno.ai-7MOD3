@@ -19,7 +19,7 @@ Check out the PPT for details! - https://www.figma.com/slides/7va4AdKHHQqQ8mGIlo
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/suryansh04/Lerno.ai-HackoWasp-7.0--Ctrl-Alt-Defeat
+git clone https://github.com/suryansh04/Lerno.ai-7MOD3.git
 cd Lerno.ai-HackoWasp-7.0--Ctrl-Alt-Defeat
 ```
 
