@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 //Making the component
 
-const AIChatbot = ({ lessonTitle, lessonContent, currentQuestion }) => {
+const AIChatbot = ({ lessonTitle, lessonContent }) => {
   const [messages, setMessages] = useState([
     {
       type: "bot",
@@ -13,7 +13,7 @@ const AIChatbot = ({ lessonTitle, lessonContent, currentQuestion }) => {
   const [inputText, setInputText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef(null);
-  const API_KEY = "AIzaSyDozMc25FJinbbERfCv35CkMLBZ8bKWgZo";
+  const API_KEY =import.meta.env.VITE_GEMINI_API_KEY;;
 
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
@@ -55,7 +55,7 @@ const AIChatbot = ({ lessonTitle, lessonContent, currentQuestion }) => {
       const result = await chat.sendMessage(`
         I'm learning about "${lessonTitle}". 
         The lesson content is: "${lessonContent}".
-        The current quiz question is: "${currentQuestion}".
+       
         
         My question is: ${inputText}
         

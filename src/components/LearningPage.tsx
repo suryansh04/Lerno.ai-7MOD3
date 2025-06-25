@@ -26,7 +26,6 @@ const firebaseConfig = {
   appId: "1:922338014144:web:7ed3af0d781f5136e60e25",
   measurementId: "G-QJXSJZZJFW",
 };
-
 const app = initializeApp(firebaseConfig);
 
 const MURF_API_KEY = "ap2_4fda0ed0-fbb8-42d8-8342-0ad8b064361c";
@@ -408,7 +407,6 @@ const LearningPage = () => {
             <AIChatbot
               lessonTitle={currentSlide.title}
               lessonContent={currentSlide.narration}
-              currentQuestion={currentSlide.assessment.multiple_choice.question}
             />
           </div>
           {/* Box 4: Next button */}
