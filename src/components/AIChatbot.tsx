@@ -13,7 +13,7 @@ const AIChatbot = ({ lessonTitle, lessonContent }) => {
   const [inputText, setInputText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef(null);
-  const API_KEY =import.meta.env.VITE_GEMINI_API_KEY;;
+  const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
@@ -53,14 +53,20 @@ const AIChatbot = ({ lessonTitle, lessonContent }) => {
 
       // Send message with context about the current lesson
       const result = await chat.sendMessage(`
-        I'm learning about "${lessonTitle}". 
-        The lesson content is: "${lessonContent}".
-       
-        
-        My question is: ${inputText}
-        
-        Please give me a helpful, educational response that's relevant to what I'm learning.
-      `);
+You are a concise, friendly, and intelligent AI tutor assisting a student who is learning a lesson titled: "${lessonTitle}".
+
+The content of the lesson is as follows:
+"${lessonContent}"
+
+When the student asks a question, your job is to:
+- Focus strictly on the topic of the lesson
+- Give brief, accurate answers (2–4 sentences max)
+- Use simple and educational language
+- Avoid unnecessary repetition or fluff
+- If the answer is complex, provide a clear example or analogy
+
+The student's question is: ${inputText}
+`);
 
       // Get the response text
       const responseText = result.response.text();
@@ -99,10 +105,10 @@ const AIChatbot = ({ lessonTitle, lessonContent }) => {
           <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
+              fill="white"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              stroke="currentColor"
+              stroke="white"
               className="w-4 h-4"
             >
               <path

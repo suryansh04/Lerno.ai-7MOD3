@@ -10,12 +10,15 @@ import PlaceholdersAndVanishInputDemo from "./components/PlaceholdersAndVanishIn
 import "./App.css";
 import LearningPage from "./components/LearningPage.tsx";
 import LandingPage from "./components/LandingPage.tsx";
-
+import Login from "./components/LoginPage.tsx";
+import SignUp from "./components/Signup.tsx";
 //paths
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
       <Route path="" element={<LandingPage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
       <Route path="/chat" element={<PlaceholdersAndVanishInputDemo />} />
       <Route path="/learning" element={<LearningPage />} />
     </Route>
