@@ -2,8 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 // ====== CONFIGURATION ======
-const PRO_PLAN_PRICE_ID = "price_1Re8ll070ajDSpWDoI0ROg96"; // <-- Your Stripe Price ID
-const STRIPE_CHECKOUT_API = "http://localhost:5000/api/create-checkout-session"; // <-- Match your backend URL
+const PRO_PLAN_PRICE_ID = import.meta.env.VITE_STRIPE_PRO_PLAN_PRICE_ID;
+const STRIPE_CHECKOUT_API = import.meta.env.VITE_STRIPE_CHECKOUT_API;
+
 // ===========================
 
 const PricingComponent: React.FC = () => {
