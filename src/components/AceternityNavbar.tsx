@@ -94,11 +94,11 @@ export default function AceternityNavbar() {
                 className="flex items-center space-x-2 px-2 py-1 text-sm font-normal"
               >
                 <img
-                  src="https://assets.aceternity.com/logo-dark.png"
+                  src="logo.png"
                   alt="logo"
                   width={24}
                   height={24}
-                  className="invert sm:w-[30px] sm:h-[30px]"
+                  className=" sm:w-[30px] sm:h-[30px]"
                 />
                 <span className="font-medium text-white text-sm sm:text-base">
                   Lerno AI

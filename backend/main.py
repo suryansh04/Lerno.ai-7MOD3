@@ -12,7 +12,7 @@ import firebase_admin
 from firebase_admin import credentials, storage
 import uuid
 load_dotenv()
-cred = credentials.Certificate("lerno-998e4-firebase-adminsdk-fbsvc-e467c59e40.json")
+cred = credentials.Certificate("lerno-998e4-firebase-adminsdk-fbsvc-736e959000.json")
 # firebase_admin.initialize_app(cred, {"storageBucket": "lerno-cd286.firebasestorage.app"})
 firebase_admin.initialize_app(cred, {"storageBucket": "lerno-998e4.firebasestorage.app"})
 # For Storing Videos and manim Generation
@@ -84,13 +84,47 @@ The description should be a few sentences, enough for someone to understand what
 Output only the plaintext JSON format of the frames. DO NOT OUTPUT MARKDOWN. DO NOT INCLUDE A PREAMBLE OR POSTAMBLE."""
 )
 
+############################################################---- OLD PROMPT --------##########################################################################
+# SCENE_AGENT_PROMPT_TEMPLATE = PromptTemplate(
+#     input_variables=["frame"],
+#     template="""Given the following, generate a script and animation description in the style of 3Blue1Brown.
+
+# {frame}
+
+# The script will be read orally to the student. This should not take longer than 10-15 seconds.
+# The animation description should be descriptive of what should be shown on the screen along with relevant positional information. (e.g., The number line should be centered vertically on the screen with a range of -10 to 10 with ticks for every 0.2, there is a blue arrow above the number line pointing from 0 to +5. The arrow will then shrink until it points to +2.)
+
+# IMPORTANT: Do NOT include ANY REFERENCE to 'scale_tips' parameter in the animation description, as this parameter is not supported in Manim CE 0.19.0.
+
+# In addition, generate a 4-choice multiple-choice question and a free-response question that can be asked at the end of the video.
+
+# Instead of always putting the correct answer first in the multiple-choice array, randomly place it at any position, and then specify which index (0, 1, 2, or 3) contains the correct answer in the "correct-index" field.
+
+# The answer for the free response should be a string.
+
+# Return the data in the following format:
+
+# {{
+# "narration": "string",
+# "animation-description": "string",
+# "free-response-question": "string",
+# "free-response-answer": "string",
+# "multiple-choice-question": "string",
+# "multiple-choice-choices": ["choice1 - string", "choice2 - string", "choice3 - string", "choice4 - string"],
+# "correct-index": integer (0-3)
+# }}
+
+# THE RESPONSE SHOULD ONLY BE A VALID PLAINTEXT JSON FORMAT. DO NOT OUTPUT MARKDOWN. DO NOT INCLUDE A PREAMBLE OR POSTAMBLE."""
+# )
+############################################################---- OLD PROMPT --------##########################################################################
+
 SCENE_AGENT_PROMPT_TEMPLATE = PromptTemplate(
     input_variables=["frame"],
     template="""Given the following, generate a script and animation description in the style of 3Blue1Brown.
 
 {frame}
 
-The script will be read orally to the student. This should not take longer than 10-15 seconds.
+The script will be read orally to the student. This should not take longer than 5-10 seconds meaning not more than 30 words long strictly.
 The animation description should be descriptive of what should be shown on the screen along with relevant positional information. (e.g., The number line should be centered vertically on the screen with a range of -10 to 10 with ticks for every 0.2, there is a blue arrow above the number line pointing from 0 to +5. The arrow will then shrink until it points to +2.)
 
 IMPORTANT: Do NOT include ANY REFERENCE to 'scale_tips' parameter in the animation description, as this parameter is not supported in Manim CE 0.19.0.
@@ -115,6 +149,7 @@ Return the data in the following format:
 
 THE RESPONSE SHOULD ONLY BE A VALID PLAINTEXT JSON FORMAT. DO NOT OUTPUT MARKDOWN. DO NOT INCLUDE A PREAMBLE OR POSTAMBLE."""
 )
+
 
 EXAMPLE_CODE = r'''
 from manim import *

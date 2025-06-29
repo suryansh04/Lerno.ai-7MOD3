@@ -7,9 +7,11 @@ const Footer: React.FC = () => (
       {/* Logo + About */}
       <div className="flex-1 min-w-[200px]">
         <div className="flex items-center mb-4">
-          <span className="bg-white rounded-md w-8 h-8 flex items-center justify-center mr-3">
+          <span className="bg-black rounded-md w-8 h-8 flex items-center justify-center mr-3">
             {/* You can replace this with your SVG/Logo */}
-            <span className="text-black font-bold text-xl">A</span>
+            <span className="text-black font-bold text-xl">
+              <img src="logo.png" alt="" />
+            </span>
           </span>
           <span className="text-white font-bold text-lg tracking-wide">
             Lerno AI
