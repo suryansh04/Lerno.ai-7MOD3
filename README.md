@@ -1,4 +1,4 @@
-# Lerno.ai - Revolutionizing ed-tech with AI-Driven Personalization(MURF API)
+# Lerno.ai - Revolutionizing ed-tech with AI-Driven Personalization
 
 ## Overview
 
